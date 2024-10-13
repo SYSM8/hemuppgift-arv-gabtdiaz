@@ -18,7 +18,6 @@ namespace Hemuppgift_Arv_Temp.Game
             this.NoPins = random.Next(10, 16);
             return $"Antalet pinnar i spel: {NoPins}";
         }
-
         // Metod som returnerar värdet av NoPins
         public virtual int GetNoPins()
         {

@@ -21,7 +21,7 @@ namespace Hemuppgift_Arv_Temp.Game
             board.TakePins(pinsTaken);
 
             // Skriver ut antalet pinnar som är kvar
-            Console.WriteLine($"Datorn tog {pinsTaken} pinnar. Pinnar kvar: {board.GetNoPins}.");
+            Console.WriteLine($"Datorn tog {pinsTaken} pinnar. Pinnar kvar: {board.GetNoPins()}.");
         }
     }
 }

@@ -12,7 +12,8 @@ namespace Hemuppgift_Arv_Temp.Game
         public string Name { get; set; }
         protected Board board {  get; set; }
 
-        public Player (string Name, Board board) // ska ärva egenskaperna/NoPins från board utan att man ska få tillgång till klassen.
+        // Ska ärva egenskaperna från Board utan att man ska få direkt tillgång till klassen.
+        public Player (string Name, Board board) 
         {
            this.Name = Name;
            this.board = board;
@@ -25,9 +26,8 @@ namespace Hemuppgift_Arv_Temp.Game
             return Name;
         }
 
-        // abstrakt metod som varje spelare implementerar
+        // Abstrakt metod som varje spelare implementerar
         public abstract void TakePins();
     }
 }
 
-t

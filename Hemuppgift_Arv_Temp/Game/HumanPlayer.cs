@@ -22,7 +22,7 @@ namespace Hemuppgift_Arv_Temp.Game
                 board.TakePins(pinsTaken);
 
                 // Skriver ut antalet pinnar som är kvar
-                Console.WriteLine($"Stickor kvar: {board.GetNoPins}");
+                Console.WriteLine($"Pinnar kvar: {board.GetNoPins()}");
             }
         }
 
