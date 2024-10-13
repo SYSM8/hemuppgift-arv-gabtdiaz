@@ -9,9 +9,9 @@
             Board board = new Board();
 
             // Skapa spelare
-            string playerName = "";
+            string playerName = ""; 
             Player human = new HumanPlayer(playerName, board);
-            playerName = human.GetPlayerName();
+            playerName = human.GetUserID(); 
 
             Player computer = new ComputerPlayer(board);
 

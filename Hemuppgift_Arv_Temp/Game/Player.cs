@@ -19,7 +19,7 @@ namespace Hemuppgift_Arv_Temp.Game
            this.board = board;
         }
 
-        public virtual string GetPlayerName()
+        public virtual string GetUserID()
         {
             Console.WriteLine("Ange ditt namn: ");
             Name = Console.ReadLine();

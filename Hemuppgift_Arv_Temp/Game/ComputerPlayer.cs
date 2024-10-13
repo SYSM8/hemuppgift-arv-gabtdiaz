@@ -12,12 +12,25 @@ namespace Hemuppgift_Arv_Temp.Game
 
         public override void TakePins()
         {
-            Random random = new Random();
+            // Hämtar antalet pinnar kvar
+            int pinsLeft = board.GetNoPins();
+            int pinsTaken;
 
-            // slumpar fram ett tal mellan 1-2
-            int pinsTaken = random.Next(1, 3);
+            // Datorn väljer pinnar beroende på antalet pinnar som finns kvar
+            // Om antalpinnar är en multipel av 3 tar datorn antingen 1-2 pinnar.
+            if (pinsLeft % 3 == 0)
+            {
+                // Slumpar fram ett tal mellan 1-2
+                Random random = new Random();
+                pinsTaken = random.Next(1, 3);
+            }
+            // Annars väljer datorn att ta pinnar så att antal pinnar kvar blir en multipel av 3.
+            else
+            { 
+                pinsTaken = pinsLeft % 3; 
+            }
 
-            // kontrollerar antalet dragna pinnar
+            // Kontrollerar antalet dragna pinnar
             board.TakePins(pinsTaken);
 
             // Skriver ut antalet pinnar som är kvar
