@@ -9,6 +9,7 @@ namespace Hemuppgift_Arv_Temp.Game
 {
     public class HumanPlayer : Player
     { 
+        // Konstruktor - Hämtar egenskaper&metoder från Board-klassen och Player-klassen
         public HumanPlayer(string Name, Board board) : base(Name, board) {}
 
         public override void TakePins()

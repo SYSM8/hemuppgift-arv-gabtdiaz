@@ -19,6 +19,7 @@ namespace Hemuppgift_Arv_Temp.Game
            this.board = board;
         }
 
+        // Metod för att hämta spelarens namn
         public virtual string GetUserID()
         {
             Console.WriteLine("Ange ditt namn: ");

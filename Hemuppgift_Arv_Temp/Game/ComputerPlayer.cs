@@ -8,6 +8,7 @@ namespace Hemuppgift_Arv_Temp.Game
 {
     internal class ComputerPlayer : Player
     {
+        // Konstruktor som hämtar metod från Board-klassen och sätter namnet på ComputerPlayer
         public ComputerPlayer(Board board) : base ("Dator", board) {} 
 
         public override void TakePins()

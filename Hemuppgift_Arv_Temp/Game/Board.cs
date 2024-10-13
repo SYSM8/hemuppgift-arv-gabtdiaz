@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace Hemuppgift_Arv_Temp.Game
 {
-    public class Board // hanterar pinsen
+    public class Board
     {
+        // Egenskaper
         private int NoPins { get; set; }
 
         // Metod som sätter värdet av NoPins
